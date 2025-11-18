@@ -1,0 +1,111 @@
+body{
+   background-color:#ffa800;
+}
+
+.container{
+    margin:53px 0 0 200px;
+    width: 100%;
+    height: 450px;
+    display: flex;
+    justify-content: RIGHT;
+    gap: 10px;
+    background-image:url( https://img.freepik.com/premium-photo/harvesting-local-berries-natural-landscape-fresh-sustainable-food-source-concept_1297718-3866.jpg) ;
+    background-size:50% 450px;
+    
+}
+.container img{
+    width: 10%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid rgba(rgb(255, 255, 255), green, blue, alpha);
+    transition: all ease-in-out 0.75s;
+ 
+}
+.container img:hover{
+    width: 35%;
+}
+
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+nav{
+    width: 100%;
+    height: 10%;
+    background-color: rgb(6, 132, 90);
+    line-height: 75px;
+    padding:0px 100px;
+    position: fixed;
+    z-index: 1;
+    background-color:black;
+
+}
+nav .logo{
+    font-size: 30px;
+    font-weight: bolder;
+    letter-spacing: 2px;
+}
+nav .logo p{
+    float: left;
+    color:#fff;
+    text-transform: uppercase;
+}
+nav ul{
+    float:right;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+}
+nav ul li a{
+    color:#ffff;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding:0px 32px;
+}
+
+h1 { 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 65px;
+    text-align:left;
+    color: #fff;
+}
+.intro{float:inline-start}
+.container{float:inline-end}
+
+button {
+
+    margin:100px 0 0 50px;
+    padding: 15px 30px;
+    background-color:black;
+    color: white;
+    font-family: inherit;
+    font-size: 18px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: white;
+    color: black;
+    
+}
+     .img{
+            animation: appear linear;
+            animation-timeline: view();
+        }
+        @keyframes appear{
+            from{
+               opacity: 0;
+               scale: 0.5; 
+            }
+            to{
+                opacity: 1;
+                scale: 1;
+            }
+        }
