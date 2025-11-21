@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<title>Smart Kitchen - Leftover Recipes</title>
+<link rel="stylesheet" href="smart.css">
+
+</head>
+
+<body>
+
+<header>Smart Kitchen - Leftover Recipes</header>
+<h2 style="text-align: center;">Click On the Dish to Access Videos</h2>
+<div class="container">
+
+    <div class="search-box">
+        <input type="search" id="searchInput" onkeyup="filterRecipes()" placeholder="Search by ingredient or recipe">
+    </div>
+
+    <div class="recipes">
+
+        <div class="card" data-type="Rice">
+            <label class="category-tag">Rice</label>
+            <a href="https://share.google/rq6JfVmgx1dAScRtK"><h3>Veggie Fried Rice</h3></a>
+            <p><strong>Ingredients:</strong> rice, veggies, soy sauce</p>
+        </div>
+
+        <div class="card" data-type="Rice">
+            <label class="category-tag">Rice</label>
+            <a href="https://share.google/6IgJ3RSSXCzoVHJO5"><h3>Rice Fritters</h3></a>
+            <p><strong>Ingredients:</strong> rice, egg, cheese</p>
+        </div>
+
+        <div class="card" data-type="Rice">
+            <span class="category-tag">Rice</span>
+            <a href="https://share.google/n4HFxTMpBCVaMDVIx"><h3>Rice Pudding</h3></a>
+            <p><strong>Ingredients:</strong> rice, milk, sugar</p>
+        </div>
+
+        <div class="card" data-type="Bread">
+            <span class="category-tag">Bread</span>
+            <a href="https://share.google/7lHkz91GCEpow4Ggl"><h3>Savory Bread Pudding</h3></a>
+            <p><strong>Ingredients:</strong> bread, egg, cheese</p>
+        </div>
+
+        <div class="card" data-type="Bread">
+            <span class="category-tag">Bread</span>
+            <a href="https://share.google/j5XWitsitZ8qjyx6g"><h3>French Toast Sticks</h3></a>
+            <p><strong>Ingredients:</strong> bread, egg, cinnamon</p>
+        </div>
+
+        <div class="card" data-type="Bread">
+            <span class="category-tag">Bread</span>
+            <a href="https://share.google/jVcvqFiTLUK20U2U8"><h3>Garlic Bread</h3></a>
+            <p><strong>Ingredients:</strong> bread, butter, garlic</p>
+        </div>
+
+        <div class="card" data-type="Chicken">
+            <span class="category-tag">Chicken</span>
+            <a href="https://share.google/Xyo0ah4RouLJmda8e"><h3>Chicken Wraps</h3></a>
+            <p><strong>Ingredients:</strong> chicken, lettuce, sauce</p>
+        </div>
+
+        <div class="card" data-type="Chicken">
+            <span class="category-tag">Chicken</span>
+            <a href="https://share.google/LqJutSWmsaJ0tlTdu"><h3>Chicken Soup Starter</h3></a>
+            <p><strong>Ingredients:</strong> chicken, broth, noodles</p>
+        </div>
+
+        <div class="card" data-type="Chicken">
+            <span class="category-tag">Chicken</span>
+            <a href="https://share.google/vEiSS7gcAiaBCieWy"><h3>Chicken Quesadilla</h3></a>
+            <p><strong>Ingredients:</strong> chicken, cheese, tortilla</p>
+        </div>
+    
+        <div class="card" data-type="Pasta">
+            <span class="category-tag">Pasta</span>
+            <a href="https://share.google/rfUNgurYG19wOV0ko"><h3>Pasta Frittata</h3></a>
+            <p><strong>Ingredients:</strong> pasta, eggs, cheese</p>
+        </div>
+
+        <div class="card" data-type="Pasta">
+            <span class="category-tag">Pasta</span>
+            <a href="https://share.google/lha4XoEu8bAXCiMiu"><h3>Pasta Salad</h3></a>
+            <p><strong>Ingredients:</strong> pasta, veggies</p>
+        </div>
+
+        <div class="card" data-type="Pasta">
+            <span class="category-tag">Pasta</span>
+            <a href="https://share.google/YDUXeel2uIMS9FW53"><h3>Baked Pasta Pie</h3></a>
+            <p><strong>Ingredients:</strong> pasta, marinara, cheese</p>
+        </div>
+
+        <div class="card" data-type="Vegetables">
+            <span class="category-tag">Vegetables</span>
+            <a href="https://share.google/qhFo5afJnDyFWZESw"><h3>Veggie Omelet</h3></a>
+            <p><strong>Ingredients:</strong> eggs, vegetables</p>
+        </div>
+
+        <div class="card" data-type="Vegetables">
+            <span class="category-tag">Vegetables</span>
+            <a href="https://share.google/oS6vW5u7xaOkoYDqe"><h3>Zero-Waste Veggie Soup</h3></a>
+            <p><strong>Ingredients:</strong> mixed veggies, broth</p>
+        </div>
+
+        <div class="card" data-type="Vegetables">
+            <span class="category-tag">Vegetables</span>
+            <a href="https://share.google/6s9jPY4RzzFHbjp6m"><h3>Veggie Quesadilla</h3></a>
+            <p><strong>Ingredients:</strong> veggies, cheese</p>
+        </div>
+
+        <div class="card" data-type="Meat">
+            <span class="category-tag">Meat</span>
+            <a href="https://share.google/amVFn7w1dJJK7gOox"><h3>Leftover Stir-Fry</h3></a>
+            <p><strong>Ingredients:</strong> meat, veggies, sauce</p>
+        </div>
+
+        <div class="card" data-type="Meat">
+            <span class="category-tag">Meat</span>
+            <a href="https://share.google/OhSmmfolJbHd8FR0q"><h3>Leftover Tacos</h3></a>
+            <p><strong>Ingredients:</strong> meat, salsa, tortilla</p>
+        </div>
+
+        <div class="card" data-type="Fruits">
+            <span class="category-tag">Fruits</span>
+            <a href="https://share.google/BYc8Sd1O7Poj4SOvS"><h3>Smoothie Mix</h3></a>
+            <p><strong>Ingredients:</strong> fruit, yogurt</p>
+        </div>
+
+        <div class="card" data-type="Fruits">
+            <span class="category-tag">Fruits</span>
+            <a href="https://share.google/JMHYsFgAP76THy1wo"><h3>Fruit Crumble</h3></a>
+            <p><strong>Ingredients:</strong> fruit, oats, sugar</p>
+        </div>
+
+        <div class="card" data-type="Fruits">
+            <span class="category-tag">Fruits</span>
+            <a href="https://share.google/cPw8qC5oF1YZqkBHd"><h3>Fruit Pops</h3></a>
+            <p><strong>Ingredients:</strong> fruit, juice</p>
+        </div>
+
+        <div class="card" data-type="Mixed">
+            <span class="category-tag">Mixed</span>
+            <a href="https://share.google/gbYTTpuwz01OiZgDS"><h3>Clean-the-Fridge Pizza</h3></a>
+            <p><strong>Ingredients:</strong> mixed leftovers, cheese</p>
+        </div>
+
+        <div class="card" data-type="Mixed">
+            <span class="category-tag">Mixed</span>
+            <a href="https://share.google/CgMt5EJ111P8nCRVL"><h3>Buddha Bowl</h3></a>
+            <p><strong>Ingredients:</strong> rice, protein, veggies</p>
+        </div>
+
+        <div class="card" data-type="Mixed">
+            <span class="category-tag">Mixed</span>
+            <a href="https://share.google/7ZKdWpZmTHDOdhZ1F"><h3>Leftover Casserole</h3></a>
+            <p><strong>Ingredients:</strong> mixed leftovers, cheese</p>
+        </div>
+
+    </div>
+</div>
+<footer>© 2025 Smart Kitchen - Reduce Food Waste</footer>
+<script>
+    function filterRecipes() {
+        let input = document.getElementById('searchInput').value.toLowerCase();
+        
+        let cards = document.getElementsByClassName('card');
+
+        for (let i = 0; i < cards.length; i++) {
+            let cardText = cards[i].innerText.toLowerCase();
+
+            if (cardText.includes(input)) {
+                cards[i].style.display = "";
+            } else {
+                cards[i].style.display = "none"; 
+            }
+        }
+    }
+</script>
+</body>
+</html>

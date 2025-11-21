@@ -1,0 +1,298 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #DCF2E8;
+  overflow-x: hidden; 
+}
+
+nav {
+  width: 100%;
+  height: 75px; 
+  background-color: rgb(20, 169, 147);
+  line-height: 75px;
+  padding: 0px 50px;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+}
+
+nav .logo {
+  font-size: 30px;
+  font-weight: bolder;
+  letter-spacing: 2px;
+  float: left;
+}
+
+nav .logo p {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+nav ul {
+  float: right;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+}
+
+nav ul li a {
+  color: #ffff;
+  text-decoration: none;
+  font-size: 18px;
+  text-transform: uppercase;
+  padding: 0px 20px;
+}
+
+.container {
+  margin-top: 75px; 
+  width: 100%;
+  height: 450px;
+  display: flex;
+  justify-content: flex-end; 
+  gap: 10px;
+  background-image: url(https://img.freepik.com/premium-photo/harvesting-local-berries-natural-landscape-fresh-sustainable-food-source-concept_1297718-3866.jpg);
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+
+.intro {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    width: 50%;
+}
+
+.container img {
+  width: 10%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid white;
+  transition: all ease-in-out 0.5s;
+  opacity: 0.9;
+}
+
+.container img:hover {
+  width: 35%;
+  opacity: 1;
+}
+
+h1 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 60px;
+  text-align: left;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+button {
+  margin: 30px 0 0 50px;
+  padding: 15px 30px;
+  background-color: black;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: white;
+  color: black;
+}
+
+#video-section {
+    padding: 80px 100px;
+    background-color: #DCF2E8;
+}
+  
+.video-content-grid {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+  
+.video-text-column {
+    flex: 1;
+    text-align: left;
+}
+  
+.video-display {
+    flex: 1;
+}
+
+.video-heading {
+    font-size: 45px;
+    color: rgb(6, 132, 90);
+    margin-bottom: 25px;
+    font-family: 'Franklin Gothic Medium', sans-serif;
+}
+
+.video-text {
+    font-size: 18px;
+    color: rgb(54, 0, 47);
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.self-hosted-video {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+    display: block;
+}
+
+.main-heading {
+  text-align: center;
+  color: #4b0082;
+  font-size: 2.5em;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 40px 0;
+  text-shadow: none;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto 50px auto;
+  flex-wrap: wrap;
+}
+
+.card-wrapper {
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s; 
+  transform-style: preserve-3d;
+}
+
+.card-wrapper:hover .card {
+  transform: rotateY(180deg);
+}
+
+.card-face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  border-radius: 15px; 
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.card-front {
+  background-size: cover;
+  background-position: center;
+  font-size: 2em; 
+}
+
+#food-card .card-front {
+  background-image: url('https://static.vecteezy.com/system/resources/thumbnails/055/928/651/small/food-notification-concept-phone-with-pizza-notification-on-screen-flat-cartoon-phone-with-food-delivery-notification-smart-phone-with-speech-bubble-and-check-mark-design-illustration-vector.jpg');
+}
+
+#health-card .card-front {
+  background-image: url('https://www.iberdrola.com/documents/20125/39730/Desperdicio_Alimentario_363x205_RRSS.jpg');
+}
+
+#environment-card .card-front {
+  background-image: url('https://media.istockphoto.com/id/519278869/vector/green-urban-development-concept.jpg?s=612x612&w=0&k=20&c=BnSpTtDTm4MMqo_DdOketqdirIeQpxSDCX_d7ASaS2g=');
+}
+
+.card-text {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.card-back {
+  background-color: #0cbeac; 
+  color: white;
+  transform: rotateY(180deg);
+  font-weight: normal;
+  padding: 20px;
+  font-size: 16px;
+}
+
+@media (max-width: 900px) {
+  .video-content-grid {
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  #video-section {
+      padding: 40px 20px;
+  }
+
+  .container {
+      flex-direction: column;
+      height: auto;
+  }
+  
+  .container img {
+      width: 100%;
+      height: 200px;
+  }
+  
+  .intro {
+      position: relative;
+      width: 100%;
+      padding-bottom: 20px;
+  }
+}
+footer {
+    background-color: rgb(6, 132, 90); 
+    color: white;
+    text-align: center;
+    padding: 40px;
+    margin-top: 50px;
+}
+
+footer h3 {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px; 
+    font-size: 16px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+footer p {
+    margin-top: 20px;
+    font-size: 14px;
+    opacity: 0.8;
+}
