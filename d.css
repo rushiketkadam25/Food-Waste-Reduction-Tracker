@@ -1,0 +1,121 @@
+  body {
+     margin: 0; 
+    background: #111;
+     color: white; 
+     font-family: sans-serif;
+      overflow-x: hidden; 
+    }
+  .spacer {
+     height: 100vh;
+     display: flex;
+      align-items: center;
+       justify-content: center;
+        color: #555;
+       }
+  
+  .timeline-container {
+     max-width: 1000px;
+     margin: 0 auto;
+      padding: 50px 0;
+     }
+  .timeline-row { 
+    display: flex;
+     align-items: stretch;
+      min-height: 350px;
+     }
+  .side { flex: 1;
+     display: flex; 
+     align-items: center;
+      justify-content: center;
+       padding: 40px; }
+
+  .line-segment {
+    width: 2px;
+     background: white;
+     position: relative;
+    transform-origin: top;
+    animation: grow-vertical linear both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 50%;
+  }
+
+  .text-box { max-width: 350px;
+     text-align: left; }
+  .text-box h3 { margin: 0 0 10px;
+     font-size: 1.8rem;
+      color: #fff; }
+  .text-box p { color: #aaa; 
+    line-height: 1.6; }
+
+  .img-wrapper {
+    position: relative; 
+    border-radius: 12px; 
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5); 
+    max-width: 350px; 
+    width: 100%;
+  }
+  
+  .img-wrapper img { 
+    display: block; 
+    width: 100%; 
+    transition: transform 0.3s ease; 
+  }
+  
+  .overlay {
+    position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.7); 
+    opacity: 0; 
+    transition: opacity 0.3s ease;
+    display: flex; align-items: center; justify-content: center;
+  }
+  
+  .overlay span { 
+    color: white; 
+    border: 2px solid white; 
+    padding: 10px 20px; 
+    font-weight: bold; 
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .img-wrapper:hover .overlay { opacity: 1; }
+  .img-wrapper:hover img { transform: scale(1.05); }
+
+  @keyframes fade-up { 
+    from { opacity: 0;
+     transform: translateY(50px) scale(0.9);
+     }
+      to 
+      { opacity: 1;
+       transform: translateY(0) scale(1);
+       }
+       }
+  @keyframes grow-vertical { 
+    from
+     { transform: scaleY(0);
+     } to
+    { transform: scaleY(1);
+     }
+    }
+  
+  .fade-up { animation: fade-up linear both; 
+    animation-timeline: view();
+     animation-range: entry 20% cover 40%; }
+
+  @media (max-width: 768px) {
+    .timeline-row { flex-direction: column; padding-bottom: 50px; }
+    .line-segment { display: none; }
+    .side { padding: 20px; text-align: center; }
+    .text-box { text-align: center; margin: 0 auto; }
+  
+   .intro-text-container {
+        padding: 0 5%; 
+        justify-content: center; 
+        text-align: center;
+    }
+    .spacer {
+        justify-content: center; 
+        padding-right: 0;
+    }
+  }
